@@ -110,6 +110,8 @@ public interface CommonConstants {
 
     String IO_THREADS_KEY = "iothreads";
 
+    String KEEP_ALIVE_KEY = "keep.alive";
+
     int DEFAULT_QUEUES = 0;
 
     int DEFAULT_ALIVE = 60 * 1000;
@@ -190,6 +192,12 @@ public interface CommonConstants {
     String REVISION_KEY = "revision";
 
     String METADATA_KEY = "metadata-type";
+
+    String MAPPING_KEY = "mapping-type";
+
+    String CONFIG_MAPPING_TYPE = "config";
+
+    String METADATA_MAPPING_TYPE = "metadata";
 
     String DEFAULT_METADATA_STORAGE_TYPE = "local";
 
@@ -358,4 +366,9 @@ public interface CommonConstants {
     String SENTINEL_REDIS = "sentinel";
 
     String CLUSTER_REDIS = "cluster";
+
+    /** Pseudo URL prefix for loading from the class path: "classpath:". */
+    String CLASSPATH_URL_PREFIX = "classpath:";
+
+    String DEFAULT_VERSION = "0.0.0";
 }
